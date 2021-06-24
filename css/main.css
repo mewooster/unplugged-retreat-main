@@ -167,6 +167,7 @@ header {
 }
 
 header .content-wrapper {
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -189,6 +190,7 @@ header figure {
 }
 
 header nav {
+  width: 60%;
   font-size: 1.125em;
   font-weight: 700;
   text-transform: uppercase;
@@ -196,14 +198,12 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  width: 60%;
-
 }
 
 header nav ul {
+  width: 100%;
   display: flex;
   justify-content: space-around;
-  width: 100%;
 }
 
 header nav ul li {
@@ -261,7 +261,7 @@ footer .copyright {
 
 }
 
-hero-area h1 {
+.hero-area h1 {
   font-size: 2.25em;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500;
@@ -369,7 +369,6 @@ input[type=button] {
   flex-flow: row wrap;
 
 }
-
 
 .map figure {
   width: 100%;
@@ -643,6 +642,11 @@ input[type=button] {
     align-items: flex-start;
  }
 
+ .map figure {
+  padding-bottom: 45.5%;
+
+}
+
  /* =================================================================
   FAQ Page
   ==================================================================
@@ -715,6 +719,11 @@ aside .content-wrapper {
  .contact-section .content-wrapper h2 {
     width: 95%;
  }
+
+.map figure {
+  padding-bottom: 37.5%;
+}
+
  /* =================================================================
   FAQ Page
   ==================================================================
