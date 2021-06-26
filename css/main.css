@@ -148,6 +148,7 @@ address {
   margin: 50px 0;
 }
 
+
 /*------------- Base Header - Footer Styles --------------*/
 
 header,
@@ -338,6 +339,11 @@ input[type=button] {
 .features p {
   text-align: center;
   margin: 0;
+}
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 /* Reviews */
