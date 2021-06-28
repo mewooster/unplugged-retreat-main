@@ -103,6 +103,8 @@ body {
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -115,6 +117,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   line-height: 1.875em;
+  margin: 0;
 }
 
 h3,
@@ -185,8 +188,8 @@ header figure {
 
 .header-divider {
   background: #3a3a3a;
-  width: 100%
   height: 1px;
+  width: 100%;
   margin: 10px 0 20px 0;
 }
 
@@ -542,7 +545,17 @@ input[type=button] {
     margin: 100px 0;
   }
 
-  /* Header */
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3 {
+      font-size: 1.5em;
+      line-height: 1.25;
+  }
+
+   /* Header */
 
   header {
     justify-content: space-around;
@@ -551,7 +564,11 @@ input[type=button] {
 
   header .content-wrapper {
     justify-content: space-between;
-    width: 220px;
+    width: 100%;
+  }
+
+  header figure {
+    width: 30%;
   }
 
   header nav {
@@ -567,6 +584,16 @@ input[type=button] {
   }
 
   /* Hero Area */
+
+  .hero-area {
+    min-height: 600px;
+  } 
+
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+}
 
   /*Aside */
 
@@ -585,6 +612,10 @@ input[type=button] {
 
   /* Features */
 
+  .features h2 {
+    margin-bottom: 20px;
+  }
+
   .features article {
     display: flex;
     justify-content: center;
@@ -595,8 +626,13 @@ input[type=button] {
   }
 
   .features .features-item-description {
-    width: 50%;
+    width: 62%;
   }
+
+.features i {
+    margin-bottom: 30px;
+  }
+
 
   /*Reviews */
   .reviews article {
@@ -604,9 +640,20 @@ input[type=button] {
     justify-content: space-between;
   }
 
+  .reviews h2 {
+    width: 85%;
+  }
+
+ .reviews article figure,
   .reviews article div {
     width: 49%;
   }
+
+ .reviews h3 {
+    width: 75%;
+    margin: 0;
+  }
+ 
 
   /* Footer */
 
@@ -615,14 +662,29 @@ input[type=button] {
     margin: 100px 0;
   }
 
-  .footer-content {
+  footer .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
   }
 
   footer .contact {
     margin-bottom: 0;
+  }
+
+   footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  footer p {
+      line-height: 1.285;
+  }
+
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
   }
 
   footer .copyright {
@@ -642,9 +704,15 @@ input[type=button] {
     padding-top: 20px;
  } 
 
+ 
  .mission-content p {
     width: 45%;
  }
+
+  .map figure {
+  padding-bottom: 45.5%;
+
+}
 
  .contact-section .content-wrapper h2 {
     width: 80%;
@@ -656,10 +724,9 @@ input[type=button] {
     align-items: flex-start;
  }
 
- .map figure {
-  padding-bottom: 45.5%;
-
-}
+ .contact-content h4 {
+    font-size: 1.5em;
+  }
 
  /* =================================================================
   FAQ Page
@@ -671,27 +738,53 @@ input[type=button] {
  }
 
  .faq-content {
-    flex-basis: 40%;
+    flex-basis: 45%;
  }
 
  .faq h2 {
     width: 100%;
  }
 
+ .faq h4,
+  .faq p {
+      font-size: .875em;
+      line-height: 1.125;
+  }
+}
 
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
 }
 
 /*General Styles*/
+
+ header {
+    padding: 15px 0;
+  }
+
   .content-wrapper {
     max-width: 960px;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+      font-size: 1.875em;
+  }
+
+  p {
+      font-size: 1.125em;
+      line-height: 1.333;
   }
 
 
 /* Hero Area */
   .hero-area h1 {
-    width: 60%;
+    font-size: 3.75em;
+    width: 80%;
   }
 
 
@@ -720,23 +813,36 @@ aside .content-wrapper {
 
 
   /*Reviews */
+.reviews h2 {
+    padding-bottom: 50px; 
+  }
+
  .reviews article div {
     width: 42%;
+  }
+
+ footer h4 {
+    font-size: 1.875em;
   }
 
 /* =================================================================
   About Page
   ==================================================================
  */
- 
+ .map figure {
+  padding-bottom: 37.5%;
+}
+
  .mission h2,
  .contact-section .content-wrapper h2 {
     width: 95%;
+    font-size: 3em;
  }
 
-.map figure {
-  padding-bottom: 37.5%;
-}
+.contact-content h4 {
+    font-size: 1.875em;
+  }
+
 
  /* =================================================================
   FAQ Page
@@ -745,8 +851,15 @@ aside .content-wrapper {
 
  .faq h2 {
     width: 100%;
+    font-size: 3em;
  }
 
+  .faq h4,
+  .faq p {
+      font-size: 1.125em;
+      line-height: 1;
+  }
+}
 
 
 @media print,
